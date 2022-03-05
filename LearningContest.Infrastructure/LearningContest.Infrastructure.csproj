@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="CsvHelper" Version="27.1.0" />
+	  <PackageReference Include="KavenegarDotNetCore" Version="1.0.3" />
+
+	  <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+
+	  <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.11.1" />
+	  <PackageReference Include="SendGrid" Version="9.23.2" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.11.1" />
+
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LearningContest.Application\LearningContest.Application.csproj" />
+    <ProjectReference Include="..\LearningContest.Domain\LearningContest.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

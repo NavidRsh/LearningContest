@@ -1,0 +1,525 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LearningContest.Api</name>
+    </assembly>
+    <members>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.Add(LearningContest.Application.Features.Algorithm.Commands.Add.AddVm)">
+            <summary>
+            درج الگوریتم جدید
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.Update(System.Int32,LearningContest.Application.Features.Algorithm.Commands.Update.UpdateVm)">
+            <summary>
+            بروزرسانی الگوریتم
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.Delete(System.Int32)">
+            <summary>
+            حذف 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.Get(System.Int32)">
+            <summary>
+            بازیابی
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.List(LearningContest.Application.Features.Algorithm.Queries.List.ListVm)">
+            <summary>
+            لیست الگوریتم ها
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.Start(System.Int32)">
+            <summary>
+            شروع عملیات الگوریتم در همین لحظه
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.Stop(System.Int32)">
+            <summary>
+            اتمام عملیات الگوریتم در همین لحظه و غیر فعالسازی آن
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.Pause(System.Int32)">
+            <summary>
+            متوقف کردن عملیات الگوریتم در این لحظه 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.ToggleActive(System.Int32)">
+            <summary>
+            فعال یا غیرفعالسازی الگوریتم 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmController.SyncIntervals(LearningContest.Application.Features.Algorithm.Commands.SyncIntervals.SyncIntervalsVm)">
+            <summary>
+            سینک بازه های زمانی الگوریتم 
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LearningContest.Api.Controllers.AlgorithmKindController">
+            <summary>
+            ماهیت الگوریتم شامل تدافعی، تهاجمی یا ... 
+            </summary>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmKindController.Add(LearningContest.Application.Features.AlgorithmKind.Commands.Add.AddVm)">
+            <summary>
+            درج ماهیت الگوریتم جدید
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmKindController.Update(System.Int32,LearningContest.Application.Features.AlgorithmKind.Commands.Update.UpdateVm)">
+            <summary>
+            بروزرسانی ماهیت الگوریتم
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmKindController.Delete(System.Int32)">
+            <summary>
+            حذف 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmKindController.Get(System.Int32)">
+            <summary>
+            بازیابی
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmKindController.List(LearningContest.Application.Features.AlgorithmKind.Queries.List.ListVm)">
+            <summary>
+            لیست ماهیت الگوریتم ها
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmLogController.List(LearningContest.Application.Features.AlgorithmLog.Queries.List.ListVm)">
+            <summary>
+            لیست لاگ الگوریتم ها
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmOrderController.List(LearningContest.Application.Features.AlgorithmOrder.Queries.List.ListVm)">
+            <summary>
+            لیست سفارشات الگوریتم ها
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmTypeController.Add(LearningContest.Application.Features.AlgorithmType.Commands.Add.AddVm)">
+            <summary>
+            درج نوع الگوریتم جدید
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmTypeController.Update(System.Int32,LearningContest.Application.Features.AlgorithmType.Commands.Update.UpdateVm)">
+            <summary>
+            بروزرسانی نوع الگوریتم
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmTypeController.Delete(System.Int32)">
+            <summary>
+            حذف 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmTypeController.Get(System.Int32)">
+            <summary>
+            بازیابی
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.AlgorithmTypeController.List(LearningContest.Application.Features.AlgorithmType.Queries.List.ListVm)">
+            <summary>
+            لیست نوع الگوریتم ها
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketGroupController.Add(LearningContest.Application.Features.BasketBasketGroup.Commands.Add.AddVm)">
+            <summary>
+            درج 
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketGroupController.Update(System.Int32,LearningContest.Application.Features.BasketBasketGroup.Commands.Update.UpdateVm)">
+            <summary>
+            بروزرسانی
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketGroupController.Delete(System.Int32)">
+            <summary>
+            حذف 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketGroupController.Get(System.Int32)">
+            <summary>
+            بازیابی
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketGroupController.List(LearningContest.Application.Features.BasketBasketGroup.Queries.List.ListVm)">
+            <summary>
+            لیست
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketTagController.Add(LearningContest.Application.Features.BasketBasketTag.Commands.Add.AddVm)">
+            <summary>
+            درج 
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketTagController.Update(System.Int32,LearningContest.Application.Features.BasketBasketTag.Commands.Update.UpdateVm)">
+            <summary>
+            بروزرسانی
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketTagController.Delete(System.Int32)">
+            <summary>
+            حذف 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketTagController.Get(System.Int32)">
+            <summary>
+            بازیابی
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.BasketBasketTagController.List(LearningContest.Application.Features.BasketBasketTag.Queries.List.ListVm)">
+            <summary>
+            لیست
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.ContractController.Add(LearningContest.Application.Features.Contract.Commands.Add.AddVm)">
+            <summary>
+            درج قرارداد جدید
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.ContractController.Update(System.Int32,LearningContest.Application.Features.Contract.Commands.Update.UpdateVm)">
+            <summary>
+            بروزرسانی قرارداد
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.ContractController.Delete(System.Int32)">
+            <summary>
+            حذف 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.ContractController.Get(System.Int32)">
+            <summary>
+            بازیابی
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.ContractController.List(LearningContest.Application.Features.Contract.Queries.List.ListVm)">
+            <summary>
+            لیست قرارداد ها
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerBasketController.Add(LearningContest.Application.Features.CustomerBasket.Commands.Add.AddVm)">
+            <summary>
+            درج 
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerBasketController.Update(System.Int32,LearningContest.Application.Features.CustomerBasket.Commands.Update.UpdateVm)">
+            <summary>
+            بروزرسانی
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerBasketController.Delete(System.Int32)">
+            <summary>
+            حذف 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerBasketController.Get(System.Int32)">
+            <summary>
+            بازیابی
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerBasketController.List(LearningContest.Application.Features.CustomerBasket.Queries.List.ListVm)">
+            <summary>
+            لیست
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerController.Detail(LearningContest.Application.Features.Customers.Queries.Details.DetailsQuery)">
+            <summary>
+            اطلاعات مشتری
+            </summary>
+            <remarks>
+             /1273135857
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerController.Portfo(LearningContest.Application.Features.Customers.Queries.Details.PortfoQuery)">
+            <summary>
+            پورتفوی مشتری
+            </summary>
+            <remarks>
+             /1273135857
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerController.Orders(LearningContest.Application.Features.Customers.Queries.Details.OrdersQuery)">
+            <summary>
+            سفارشات امروز مشتری
+            </summary>
+            <remarks>
+             /1273135857
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerController.ImportCustomers(LearningContest.Application.Features.MarketTransaction.Commands.ImportCustomers.ImportCustomersVm)">
+            <summary>
+            فراخوانی اطلاعات مشتریان و جایگزینی در پایگاه داده
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerController.ImportCustomerStatements(LearningContest.Application.Features.MarketTransaction.Commands.ImportCustomerStatements.ImportCustomerStatementsVm)">
+            <summary>
+            سرویس مشاهده گردش حساب مشتری
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerController.SOrders">
+            <summary>
+            درخواست های مشتریان برتر
+            </summary>
+            <remarks>
+             /1273135857
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.CustomerController.SOrdersTest">
+            <summary>
+            درخواست های مشتریان برتر
+            </summary>
+            <remarks>
+             /1273135857
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.InstrumentController.wsPriceInfo">
+            <summary>
+            دریافت جریان اطلاعات نماد
+            </summary>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MabnaController.AddToMabnaInstruments">
+            <summary>
+            پرکردن اطلاعات پایه نمادها 
+            </summary>
+            <remarks>
+            پرکردن بر اساس اطلاعات نمادهای مبنا که حاوی تمامی انواع نمادهاست
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MabnaController.AddHolidays">
+            <summary>
+            پرکردن اطلاعات تعطیلات 
+            </summary>
+            <remarks>
+            این سرویس اطلاعات تعطیلات را از مبنا گرفته و در جدول ما پر میکند.
+            این اطلاعات سالانه است و این سرویس باید سالی یکبار صدا زده شود
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MabnaController.CheckToday(System.String)">
+            <summary>
+            چک کردن باز بودن بازار در روز
+            </summary>
+            <remarks>
+            این سرویس وضعیت بازار در روز وارد شده را بررسی میکند اگر بازار باز باشد ترو برمیگرداند
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MabnaController.AddDailyTrade(LearningContest.Application.Features.Mabna.Commands.AddDetailShareToDailyTradeCommand.AddDailyTradeCommand)">
+            <summary>
+            پرکردن ریز وضعیت نماد در روز خاص
+            </summary>
+            <remarks>
+            این سرویس جدول دیلی ترید را بر اساس لیست روزهای ورودی پر میکند. جزئیات قیمت و حجم نماد ها در هر روز به کمک
+            همین سرویس ثبت میشوند
+            این سرویس در پایان هر بازار برای روزجاری باید صدا زده شود
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MabnaController.UpdateFilterValueForNDayAverage(LearningContest.Application.Features.Mabna.Commands.AddShareToMabnaInstruments.UpdateFilterValueFornDayAverageCommands)">
+            <summary>
+            پرکردن میانگین پنج روز قبل برای هر نماد در روز ورودی
+            </summary>
+            <remarks>
+            این سرویس بر اساس لیست روزهای ورودی، میانگین حجم پنج روز قبل هر نماد را در جدول فیلتر پر میکند
+            دو ستون برای میانگین داریم که اولی میانگین پنج روز قبل است (بدون احتساب روز ردیف)
+            دومی میانگین پنج روز قبل با احتساب روز ردیف است که به درد حالت لایو میخورد
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MabnaController.UpdateDailyTradeForAverageVolume(LearningContest.Application.Features.Mabna.Commands.UpdateDailyTradeForAverageVolume.UpdateDailyTradeForAverageVolumeCommands)">
+            <summary>
+            محاسبه میانگین 90 روزه برای جدول دیلی ترید
+            </summary>
+            <remarks>
+            این متد برای ردیف هایی که میانگین 90 روزه ندارند مقدار تولید و جاگذاری میکند
+            این سرویس در پایان هر بازار و بعد از ثبت اطلاعات توسط سرویس ثبت دیتای نماد در دیلی ترید باید صدا زده شود
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MabnaController.UpdateCriticalPoints">
+            <summary>
+            محاسبه نقاط عطف برای همه نمادها
+            </summary>
+            <remarks>
+            این سرویس بر اساس نمادهای موجود
+             نقاط اکسترمم آن را در یک جدول به نام زیر میریزد
+            با هر بار اجرای این سرویس، رکوردهای در صورت وجود بازنویسی میشوند و در صورت عدم وجود اضافه میشوند.
+            LocalChangePoints
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MabnaController.GetVolumeFilter(System.String)">
+            <summary>
+            فیلتر حجم
+            </summary>
+            <remarks>
+            خروجی این متد لیستی از نمادهاییست که در تاریخ داده شده از فیلتر ما عبور کرده و منتخب شده اند.
+            ورودی این متد اختیاریست. اگر داده شود بر اساس اطلاعات قبل از آن روز ، نمادهای منتخب آن روز برگردانده میشود
+            اگر ورودی داده نشود روز جاری ملاک است. در صورتی که بازار آغاز شده باشد، ملاک لحظه ی صدا زدن این متد است
+            اگر بازار تمام شده باشد ملاک مقادیر هر نماد بعد از بسته شدن بازار است
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MarketTransactionController.SaveTransactions(LearningContest.Application.Features.MarketTransaction.Commands.SaveTransactions.SaveTransactionsVm)">
+            <summary>
+            فراخوانی و ذخیره سازی معاملات روزانه
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.MarketTransactionController.SaveDailyTransactions">
+            <summary>
+            برای اجرا توسط هنگ فایر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.OrderController.AddBuy(LearningContest.Application.Features.Customers.Queries.Details.AddBuyCommand)">
+            <summary>
+            ثبت سفارش
+            </summary>
+            <remarks>
+             {
+                "bourseAccountId":5000057,
+                "insMaxLcode":"IRR3BSMZ0102",
+                "quantity":100,
+                "lineBudget":0,
+                "maxPrice":1000,
+                "dueDate":"1395/07/15",
+                "underCautionAgreement":"true",
+                "comments":"comment test",
+                "isSigned":1
+            }
+            </remarks>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.StreamController.Transactions(System.String)">
+            <summary>
+            دریافت جریان اطلاعات نماد
+            </summary>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.UserBasketController.Add(LearningContest.Application.Features.UserBasket.Commands.Add.AddVm)">
+            <summary>
+            درج 
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.UserBasketController.Update(System.Int32,LearningContest.Application.Features.UserBasket.Commands.Update.UpdateVm)">
+            <summary>
+            بروزرسانی 
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.UserBasketController.Delete(System.Int32)">
+            <summary>
+            حذف 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.UserBasketController.Get(System.Int32)">
+            <summary>
+            بازیابی
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.UserBasketController.List(LearningContest.Application.Features.UserBasket.Queries.List.ListVm)">
+            <summary>
+            لیست سبدهای کاربران
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LearningContest.Api.Controllers.UserController.ResetToken">
+            <summary>
+            دریافت توکن جدید
+            </summary>
+        </member>
+    </members>
+</doc>
